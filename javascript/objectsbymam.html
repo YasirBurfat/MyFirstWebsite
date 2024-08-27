@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+
+let person = {
+    firstname:"Jane",
+    lastname:"Doe",
+    age:"25",
+    gender:"female",
+    greet: function(){
+        return "this is a person";
+    },
+    
+}
+person.experience=[
+        {organization:"abc",year:"2012",period:"2 years"},
+        {organization:"abc",year:"2012",period:"2 years"},
+        {organization:"abc",year:"2012",period:"2 years"}
+    ]
+person.nic="3232421231";
+person.firstname="john";
+delete person.nic;
+let new_person= person;
+new_person.age="35";
+
+person.university=function(){
+    return `${this.firstname} ${this.lastname} studies in MUET.`;
+    // return this.firstname + " " + this.lastname + " " + "studies in MUET";
+}
+// function person(firstname, lastname, gender, age){
+//     this.firstname=firstname;
+//     this.lastname = lastname;
+//    this. gender = gender;
+//     this.age = age;
+
+// }
+// let person1 = new person("yasir","burfat","male","21");
+// let person2 = new person("yasir","burfat","male","21");
+// let person3 = new person("yasir","burfat","male","21");
+// let person4 = new person("yasir","burfat","male","21");
+// prompt("Enter a name?");
+console.table(person.experience[0].organization);
+        </script>
+    </head>
+    <body>
+
+    </body>
+</html>

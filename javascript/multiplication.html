@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+
+       
+
+        function multiplication()
+        {
+
+            event.preventDefault();
+            let number = Number(document.getElementById('nbr').value);
+            let container = document.getElementById('container');
+
+            let table =`<table><thead><tr><td>${number} Multiplier </td> <td> Result </td></tr> </thead><tbody>`;
+
+            for(let i = 1; i<=10; i++)
+            {
+                table += `<tr><td>${number} x   ${i}</td><td> ${number * i} </td></tr>`;
+            }
+
+            table += "</tbody></table>";
+
+            container.innerHTML = table;
+
+        }
+
+
+    </script>
+
+    <style>
+
+        #frm
+        {
+            background-color: aquamarine;
+            width: 500px;
+            padding: 3px;
+            margin: auto;
+        }
+        #frm:hover
+        {
+            box-shadow: 5px 4px 3px black;
+        }
+        #container
+        {
+            background-color: rgb(216, 234, 251);
+            margin: auto;
+            padding: 0;
+            border: none;
+            height: 400px;
+            width: 500px;
+        }
+        #container:hover 
+        {
+            background-color: rgb(155, 207, 253);
+            box-shadow: 5px 4px 3px black;
+        }
+
+    </style>
+
+</head>
+<body>
+    
+    <div class="mainc">
+        <form id="frm" onsubmit="multiplication()">
+            <label for="nbr">Enter: </label>
+            <input id="nbr" type="number">
+            <button type="submit">Submit</button>
+        </form>
+    
+        <div id="container"></div>
+    </div>
+    
+
+</body>
+</html>

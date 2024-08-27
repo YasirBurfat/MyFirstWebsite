@@ -1,0 +1,158 @@
+
+body
+{
+    background-image: url(bg2.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    box-sizing: content-box;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.pic
+{
+    width: 100%;
+    height: 300px;
+}
+
+.nav
+{
+    background-color:gray  ;
+    font-family: arial;
+    height: 40px;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+}
+
+.nav ul
+{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    gap: 18px;    
+    overflow: hidden;
+}
+
+.nav ul li 
+{
+    list-style-type: none;
+    font-size:  18px;
+}
+
+.nav ul li a
+{
+    text-decoration: none;   
+    color:#d01010;
+    display: block;
+}
+.nav a:hover
+{
+    background-color: #573c3c;
+} 
+
+.nav input
+{
+    border-radius: 80px;
+    padding: 0;
+    height: 25px;
+    margin: 0;
+    font-size: 16px;
+}
+
+.nav button
+{
+    color: #fff;
+    background-color: gray;
+    font-family: arial;
+    border-radius: 180px;
+    padding: 0;
+    margin: 0;
+}
+
+.nav button img
+{
+    height: 20px;
+    width: 30px;
+}
+
+
+
+
+.vid
+{
+    width: 500px;
+    height: 500px;
+    padding: 2px;
+    outline: 2px solid rgb(122, 115, 115);
+}
+.mainc
+{
+    display: flex;
+    flex-direction: row;   
+    padding: 50px;
+}
+.ptxt
+{
+    width: 80%;
+    text-align: justify;
+    font-size: 20px;
+    font-family: arial;
+    color: #ffffff;
+}
+h1
+{
+    font-family: sans-serif;
+    color: #ffffff;
+
+}
+
+.list
+{
+    list-style-type: none;
+    margin: 0;
+    padding: 0; 
+}
+
+.list li a
+{
+    color: #ffffff;
+    text-decoration:none;
+}
+
+.icon
+{
+    width: 50px;
+    height: 50px;
+    padding: 2px;
+    margin-top: 25px;
+    border-radius: 40px;
+}
+
+.footer
+{
+    background-color: rgb(126, 115, 115);
+    padding: 16px;
+    margin: 0;
+}
+
+.footer ul li a
+{
+    text-decoration: none;   
+    
+}
+
+.footer ul li
+{
+    list-style-type: none;
+    
+}

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        
+        
+        
+        function Calculator(operator)
+        {
+            let x = Number(document.getElementById('num1').value);
+            let y = Number(document.getElementById('num2').value);
+            let res;
+
+            switch(operator)
+            {
+                case 'sum':
+                res = x + y;
+                break;
+
+                case 'minus':
+                res = x - y;
+                break;
+
+                case 'multiply':
+                res = x * y;
+                break;
+
+                case 'divide':
+                res = x / y;
+                break;
+
+                default: 
+                alert("Invalid Operator."); 
+                break;
+            }
+
+            document.getElementById('op').innerHTML = "the Operation of two numbers is : " + res;
+           
+           
+        }
+
+    
+    </script>
+
+    <style>
+        body
+        {
+            display: flex;
+            justify-content: center;
+            margin-top: 150px;
+            background-color: antiquewhite;
+        }
+        .box
+        {
+            background-color: brown;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            border-radius: 9px;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            border: 2px solid black;
+            padding: 50px;
+            height: 350px;
+            width: 250px;
+        }
+        .Bbox
+        {
+            margin-top: 30px;
+        }
+        .Obox
+        {
+            background-color: rgb(36, 89, 65);
+            border: 1px solid black;
+            height: 35px;
+            width: 250px;
+            margin-top: 15px;
+        }
+        .heading{
+            display: flex;
+            justify-content: center;
+        }
+        .Bbox button{
+            color: white;
+            background-color: rgb(195, 162, 119);
+            border-radius: 9px;
+            justify-content: space-between;
+            font-size: 19px;
+        }
+
+
+    </style>
+
+</head>
+<body>
+    
+    
+    <div class="box">
+      <div class="heading">
+        <h1>Calculator</h1>
+      </div>
+        <label for="num1">Enter the number1</label>
+        <input id="num1" type="number">
+        <label for="num2">Enter the number2</label>
+        <input id="num2" type ="number">
+        <div class="Bbox">
+            <button onclick="Calculator('sum')">+</button>
+            <button onclick="Calculator('minus')">-</button>
+            <button onclick="Calculator('multiply')">x</button>
+            <button onclick="Calculator('divide')">/</button>
+        </div>
+        <div class="Obox">
+            <span id="op">Output:</span>
+        </div>
+    </div>    
+    
+    
+</body>
+</html>

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        
+        
+        
+        function Calculator(operator)
+        {
+            let x = Number(document.getElementById('num1').value);
+            let y = Number(document.getElementById('num2').value);
+            let res;
+
+            switch(operator)
+            {
+                case 'sum':
+                res = x + y;
+                break;
+
+                case 'minus':
+                res = x - y;
+                break;
+
+                case 'multiply':
+                res = x * y;
+                break;
+
+                case 'divide':
+                res = x / y;
+                break;
+
+                default: 
+                alert("Invalid Operator."); 
+                break;
+            }
+
+            document.getElementById('op').innerHTML = "the Operation of two numbers is : " + res;
+           
+           
+        }
+
+    
+    </script>
+
+    <style>
+        body
+        {
+            display: flex;
+            justify-content: center;
+            margin-top: 150px;
+            background-color: antiquewhite;
+        }
+        .box
+        {
+            background-color:  #a0d2eb;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            border-radius: 9px;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            border: none;
+            padding: 50px;
+            height: 350px;
+            width: 250px;
+        }
+        .mainc{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .screen
+        {
+            background-color: #a28089;
+            border: none;
+            height: 35px;
+            width: 250px;
+            margin-top: 15px;
+        }
+        .heading{
+            display: flex;
+            justify-content: center;
+        }
+        .butts
+        {
+            margin-top: 30px;
+            padding: 9px;
+            justify-content: center;
+            border: none;
+            background-color: #ddd;
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+        }
+        .butts button{
+            color: white;
+            border: none;
+            background-color: transparent;
+            border-radius: 300px;
+            display: flex;  
+            justify-content: space-between;
+            font-size: 25px;
+        }
+        .butts button:hover
+        {
+            background-color: #7c7a7a;
+        }
+        .setbut
+        {
+            display: flex;
+            flex-direction: row;
+        }
+
+    </style>
+
+</head>
+<body>
+    
+    
+    <div class="box">
+        <div class="mainc">
+            <div class="heading">
+                <h1>Calculator</h1>
+            </div>
+            
+            <div class="screen">
+                <span id="op">Output:</span>
+            </div>
+            <div class="butts">
+                <div class="operations">
+                    <button onclick="Calculator('sum')">+</button>
+                    <button onclick="Calculator('minus')">-</button>
+                    <button onclick="Calculator('multiply')">x</button>
+                    <button onclick="Calculator('divide')">/</button>
+                </div>
+                <div class="nbrs">
+                    <div class="setbut">
+                        <button type="number">7</button>
+                        <button type="number">8</button>
+                        <button type="number">9</button>
+                    </div>
+                    <div class="setbut">
+                        <button type="number">4</button>
+                        <button type="number">5</button>
+                        <button type="number">6</button>
+                    </div>
+                    <div class="setbut">
+                        <button type="number">1</button>
+                        <button type="number">2</button>
+                        <button type="number">3</button>
+                    </div>
+                    <div class="setbut">
+                        <button type="number">%</button>
+                        <button type="number">0</button>
+                        <button type="number">.</button>
+                    </div>
+                </div>
+            </div>
+        </div>    
+        </div>
+        
+    
+    
+</body>
+</html>

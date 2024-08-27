@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="mainc">
+        <div style="height: 300px; width: 300px;" id="bor" >
+            <h1>Personal Information</h1>
+            <div>
+                <img src="mrunal.jpg" alt="mrunal thakur pic" id="pic" style=" display: flex; height: 100px;width: 100px;;border-radius: 100px;">
+            </div>
+            <div>
+                <p id="demo">WHO IS SHE.</p>
+            </div>
+        </div>
+    
+    
+        <div>
+            <button type="button" onclick='document.getElementById("demo").innerHTML = "Myself Mrunal Thakur"'>NAME</button>
+        
+            <button type="button" onclick="document.getElementById('bor').style.border='1px solid'">BORDER</button>
+        
+            <button type="button" onclick="document.getElementById('demo').style.color='red'">COLOR</button>
+        
+            <button type="button" onclick="document.getElementById('bor').style.background ='blue'">BACKGROUND</button>
+        </div>
+    
+    
+        <div>
+            <button type="button" onclick="document.getElementById('pic').style.display ='none'">HIDE</button>
+            <button type="button" onclick="document.getElementById('pic').style.display='block'">SHOW</button>
+            <button type="button" onclick="document.getElementById('pic').style.float='left'">LEFT</button>
+            <button type="button" onclick="document.getElementById('pic').style.float='right'">RIGHT</button>
+        </div>
+    </div>
+
+    
+
+
+    
+
+</body>
+</html>

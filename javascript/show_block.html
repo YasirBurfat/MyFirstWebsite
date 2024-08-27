@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lifecycle</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="profile.css">
+    <script>
+        function prompt()
+        {
+            document.getElementById('showUB').style.display='none';
+            document.getElementById('showU').style.display='block';
+        }
+
+        function prompt1()
+        {
+            document.getElementById('showIB').style.display='none';
+            document.getElementById('showI').style.display='block';
+        }
+
+
+    </script>
+
+    <style>
+
+        body
+        {
+            display: flex;
+            justify-content: center;
+            margin:0;
+            margin-top: 200px;
+            padding: 0;
+        }
+        .con
+        {
+            display: flex;
+            justify-content: center;
+        }
+
+
+
+    </style>
+</head>
+<body>
+
+    
+    <button id="showUB" style="padding: 20px; font-family: arial; color: white; background-color: violet; border-radius: 100px; font-size: 20px;" onclick=prompt();>ShowUser</button>
+
+    <div class="con" id="showU" style="border: 1px solid; width: 300px; height: 300px ; background-color: bisque; display: none;">
+
+            <img src="mrunal.jpg" alt="mrunal" class="pic" style="height: 100px; width: 100px; border-radius: 100px ;">
+            <h2>Mrunal Thakur</h2>
+
+            <button id="showIB" style="padding: 10px; font-family: arial; color: white; background-color: violet; border-radius: 100px; font-size: 9px;" onclick="prompt1();">Show Information</button>
+
+            <div id="showI" style="display: none;">
+                <p><b>Email:</b> murnalburfat@gmail.com</p>
+                <p><b>Location:</b> Jamshoro SUECHS PHASE II </p>
+                <p><b>Website:</b> www.Lifecycle.com</p>
+            </div>
+        
+    </div>
+
+    <div>
+    </div>
+
+
+
+
+
+
+</body>
+</html>

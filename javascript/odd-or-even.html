@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Odd-Even</title>
+
+    <script>
+        
+        function chacknum()
+        {
+            let a = Number(document.getElementById("inp").value) ;
+            let res = document.getElementById("scr");
+
+            if(a%2 == 0)
+            {
+                res.innerHTML = "Even number";
+            }                   
+            else
+            {
+                res.innerHTML= "Odd number";
+            }                   
+        }    
+
+    </script>
+
+    <style>
+
+        .box{
+
+            width: 300px;
+            border: none;
+            display: flex;
+            justify-content: center;
+            background-color: aqua;
+            margin: 10% auto;
+            padding: 0;
+            height: 300px;
+        }
+
+        .scr{
+            border: none;
+            background-color: tomato;
+        }
+        .func
+        {
+            border: none;
+            background-color: antiquewhite;
+            display: flex;
+            flex-direction: column;
+            margin: 20px;
+            padding: 5px;
+        }
+
+    </style>
+
+</head>
+<body>
+    
+
+    <div class="box">
+
+        <div class="scr">
+            <span id="scr"></span>
+        </div>
+        
+        <div class="func">
+            <input type="number" id="inp" >
+            <button class="but" onclick="chacknum()">check</button>
+        </div>
+
+    </div>
+
+
+</body>
+</html>

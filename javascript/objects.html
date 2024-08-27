@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<script>
+
+
+    console.log("-task1-");
+    let student = 
+    {
+        name: 'yasir',
+        age: '20',
+        grade: 'B',
+    }
+  
+    console.table(student)
+
+    console.log("-task2-")
+
+
+    student.subjects=["DSA","EEPM","CS","DS"]
+
+    console.log(student.name);
+    console.log(student.grade);
+    console.log(student.subjects[0]);
+
+    console.log("-task3-")
+
+    student.university = "mehran"
+
+    console.table(student)
+
+    console.log("-task4-")
+
+    delete student.age
+
+    console.table(student)
+
+    console.log("-task5-")
+
+    student. greet=function() {
+        return "hi! My name is " + student.name + " and i study in " + student.university;
+    }
+
+    console.log("-task6-")
+
+    console.log(student.greet())
+
+
+    console.log("-task7-")
+    
+    student.project=[
+        {title:"AI", year:"2024", course:"Machine Learning" },{title:"AI", year:"2024", course:"Machine Learning" },{title:"AI", year:"2024", course:"Machine Learning" }
+    ]
+    
+    console.log(student.name)
+    console.log(student.project[0].title)
+    console.log(student.project[0].course)
+    
+    
+    console.log("-task8-")
+
+    function car(make, year, name)
+    {
+        this.make = make;
+        this.year = year;
+        this.name = name;
+    }
+
+    let car1 = new car("toyota", "2009", "Corola");
+    let car2 = new car("toyota", "2009", "Corola");
+    let car3 = new car("toyota", "2009", "Corola");
+
+    console.table(JSON.stringify(car1))
+    
+    
+
+</script>
+
+</head>
+<body>
+    
+</body>
+</html>
